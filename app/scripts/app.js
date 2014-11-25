@@ -11,7 +11,9 @@
 angular
   .module('buffettchesneyApp', [
     'ngAnimate',
+    'ngAria',
     'ngCookies',
+    'ngMessages',
     'ngResource',
     'ngRoute',
     'ngSanitize',
