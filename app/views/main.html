@@ -1,22 +1,10 @@
 <div class="container">
-  <h2>My todos</h2>
-
-  <!-- Todos input -->
-  <form role="form" ng-submit="addTodo()">
-    <div class="row">
-      <div class="input-group">
-        <input type="text" ng-model="todo" placeholder="What needs to be done?" class="form-control">
-        <span class="input-group-btn">
-          <input type="submit" class="btn btn-primary" value="Add">
-        </span>
-      </div>
-    </div>
-
-    <!-- Todos list -->
-    <div ui-sortable ng-model="todos">
-      <p class="form-group" style="padding:5px 10px; cursor: move;" ng-repeat="todo in todos">
-        <input type="text" ng-model="todo" class="form-control">
-      </p>
-    </div>
+  <form class="start" role="form" ng-submit="start()">
+    <input type="submit" class="btn btn-primary" value="Start">
+  </form>
+  <div class="song"></div>
+  <form class="answer" role="form" ng-submit="choose()">
+    <input type="submit" class="btn" ng-click="setAnswer('Buffett')" value="Buffett">
+    <input type="submit" class="btn" ng-click="setAnswer('Chesney')" value="Chesney">
   </form>
 </div>
