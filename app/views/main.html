@@ -1,10 +1,18 @@
-<div class="container">
+<div class="container" id="game">
   <form class="start" role="form" ng-submit="start()">
     <input type="submit" class="btn btn-primary" value="Start">
   </form>
-  <div class="song"></div>
-  <form class="answer" role="form" ng-submit="choose()">
-    <input type="submit" class="btn" ng-click="setAnswer('Buffett')" value="Buffett">
-    <input type="submit" class="btn" ng-click="setAnswer('Chesney')" value="Chesney">
-  </form>
+  <div id="question" style="display:none;">
+    <div class="song"></div>
+      <form class="answer" role="form" ng-submit="choose()">
+        <input type="submit" class="btn" ng-click="setAnswer('Buffett')" value="Buffett">
+        <input type="submit" class="btn" ng-click="setAnswer('Chesney')" value="Chesney">
+      </form>
+  </div>
+  <div id="answer" style="display:none;">
+    <div id="result"></div>
+    <form class="next" role="form" ng-submit="next()">
+      <input type="submit" class="btn" value="Next">
+    </form>
+  </div>
 </div>

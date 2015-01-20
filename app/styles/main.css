@@ -22,12 +22,17 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   line-height: 40px;
+  font-size: 40px;
   padding-bottom: 19px;
 }
 
-.start{
+.container {
   text-align: center;
-  margin:10px;
+}
+
+#game {
+  font-size: 30px;
+  margin-bottom: 10px;
 }
 
 /* Custom page footer */
@@ -58,6 +63,6 @@ body {
   }
   /* Space out the masthead */
   .header {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 }
